@@ -1,0 +1,11 @@
+/workspaces/rustroguelike/roguelike/target/debug/deps/libwayland_sys-819241df8cceaa6b.rmeta: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/common.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/client.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/egl.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/cursor.rs
+
+/workspaces/rustroguelike/roguelike/target/debug/deps/libwayland_sys-819241df8cceaa6b.rlib: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/common.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/client.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/egl.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/cursor.rs
+
+/workspaces/rustroguelike/roguelike/target/debug/deps/wayland_sys-819241df8cceaa6b.d: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/common.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/client.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/egl.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/cursor.rs
+
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/lib.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/common.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/client.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/egl.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wayland-sys-0.21.13/src/cursor.rs:

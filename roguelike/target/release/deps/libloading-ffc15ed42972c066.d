@@ -1,0 +1,11 @@
+/workspaces/rustroguelike/roguelike/target/release/deps/liblibloading-ffc15ed42972c066.rmeta: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/os/mod.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/changelog.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/util.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/os/unix/mod.rs
+
+/workspaces/rustroguelike/roguelike/target/release/deps/liblibloading-ffc15ed42972c066.rlib: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/os/mod.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/changelog.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/util.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/os/unix/mod.rs
+
+/workspaces/rustroguelike/roguelike/target/release/deps/libloading-ffc15ed42972c066.d: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/os/mod.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/changelog.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/util.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/os/unix/mod.rs
+
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/lib.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/os/mod.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/changelog.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/util.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.5.2/src/os/unix/mod.rs:

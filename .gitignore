@@ -1,2 +1,8 @@
 target
 highest_file_size
+.gitpod.yml
+dockerfile.txt
+node_modules
+yarn.lock
+build
+examples

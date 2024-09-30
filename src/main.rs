@@ -1,22 +1,57 @@
+#![allow(warnings)]
+use std::default;
+
 use bevy::sprite::{Wireframe2dConfig, Wireframe2dPlugin};
+use bevy::utils::dbg;
 use bevy::{
     prelude::*,
     sprite::{MaterialMesh2dBundle, Mesh2dHandle},
 };
 use bevy::window::PrimaryWindow;
+use bevy_ecs_ldtk::prelude::*;
+use bevy_rapier2d::prelude::*;
+use crate::components::*;
 
-pub mod player;
-pub mod components;
+#[derive(Clone, Copy, Eq, PartialEq, Default, States, Debug, Hash)]
+enum GameState {
+    MainMenu,
+    Menu,
+    #[default]
+    LoadingScreen,
+    Game,
+}
+
+mod player;
+mod components;
+mod gui;
+mod map;
+mod colliders;
+mod ground_detection;
 
 fn main(){
-    let mut app = App::new();
-    app.add_plugins((
-        DefaultPlugins,
-        Wireframe2dPlugin
-    ));
-    app.add_systems(Startup, setup);
-    app.add_systems(Update, toggle_wireframe);
-    app.run();
+    App::new().add_plugins((
+        DefaultPlugins.set(AssetPlugin{
+            watch_for_changes_override : Some(true),
+            ..Default::default()
+        })
+        .set(ImagePlugin::default_nearest()),
+        Wireframe2dPlugin,
+        LdtkPlugin,
+        RapierPhysicsPlugin::<NoUserData>::pixels_per_meter(100.0),
+        map::MapPlugin,
+        player::PlayerPlugin,
+    ))
+    .insert_resource(LdtkSettings {
+        level_spawn_behavior: LevelSpawnBehavior::UseWorldTranslation {
+            load_level_neighbors: true,
+        },
+        set_clear_color: SetClearColor::FromLevelBackground,
+        ..Default::default()})
+        .insert_state(GameState::LoadingScreen)
+        .add_systems(Startup, (setup, gui::setup).chain())
+        .add_systems(Update, (toggle_wireframe))
+        .run();
+    
 }
 
 
@@ -24,9 +59,6 @@ const X_EXTENT: f32 = 900.;
 
 fn setup(
     mut commands: Commands,
-    mut meshes: ResMut<Assets<Mesh>>,
-    mut materials: ResMut<Assets<ColorMaterial>>,
-    asset_server: Res<AssetServer>,
     mut window_query: Query<&mut Window, With<PrimaryWindow>>,
 ){
     if let Ok(mut window) = window_query.get_single_mut(){
@@ -34,11 +66,15 @@ fn setup(
     }
     commands.spawn(Camera2dBundle::default());
 
-    commands.spawn(SpriteBundle{
-        texture: asset_server.load("duck.jpg"),
-        ..default()
-    });
+    
+}
 
+
+fn setup_shapes(
+    mut commands: Commands,
+    mut meshes: ResMut<Assets<Mesh>>,
+    mut materials: ResMut<Assets<ColorMaterial>>,
+){
     let shapes = [
         Mesh2dHandle(meshes.add(Circle{radius: 50.0})),
         Mesh2dHandle(meshes.add(CircularSector::new(50.0, 1.0))),
@@ -99,7 +135,4 @@ fn toggle_wireframe(
 
 
 
-
-#[derive(Resource)]
-struct GreetTimer(Timer);
 
